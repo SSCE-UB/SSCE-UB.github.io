@@ -45,7 +45,7 @@ export default function RootLayout({
           <div className="relative flex flex-col h-screen">
             <Navbar />
 
-            <main className="container mx-auto max-w-7xl px-6 flex-grow">
+            <main className="container mx-auto max-w-7xl px-2 sm:px-6 flex flex-col justify-center flex-grow">
               {children}
             </main>
 
@@ -53,11 +53,11 @@ export default function RootLayout({
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
-                href=""
-                title="birjand univercity github"
+                href="https://github.com/SSCE-UB"
+                title="Computer sosiety of Birjand University Github"
               >
                 <span className="text-default-600">Powered by</span>
-                <p className="text-primary">BirjandUnivercity</p>
+                <p className="text-primary">SSCE-UB</p>
               </Link>
             </footer>
           </div>

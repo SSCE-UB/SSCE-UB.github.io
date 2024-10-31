@@ -1,24 +1,33 @@
 import CustomCard from "../components/card";
 const data: any = [
   {
-    lable: "SSCE-UB",
-    src: "/computerE.jpg",
-    link: "https://t.me/SSCEUBIR",
-  }, {
-    lable: "SSCE-UB",
+    lable: "Channel",
     src: "/logo-img.jpg",
     link: "https://t.me/SSCEUB",
-  }, {
-    lable: "teste3",
-    src: "../public/vercel.svg",
-    link: "#",
-  }
-]
-export default function Home() {
+  },
+  {
+    lable: "Super Group",
+    src: "telegramLogoFill.png",
+    link: "https://t.me/SSCEUBIR",
+  },
+  {
+    lable: "Instagram",
+    src: "/instagramLogo.png",
+    link: "https://www.instagram.com/ssce_ubir?igsh=cDNmNDdyMnh5OHFk",
+  },
+];
 
+export default function Home() {
   return (
-    <div className="flex flex-wrap justify-center h-full items-center gap-6">
-      {data.map((data: any) => <CustomCard key={data.lable} lable={data.lable} src={data.src} link={data.link} />)}
+    <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+      {data.map((data: any) => (
+        <CustomCard
+          key={data.lable}
+          lable={data.lable}
+          link={data.link}
+          src={data.src}
+        />
+      ))}
     </div>
   );
 }
